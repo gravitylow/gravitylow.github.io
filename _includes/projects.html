@@ -1,31 +1,116 @@
 <div class="container">
   <div class="user-details">
-    <h3> Featured Projects </h3>
+    <h3>Projects</h3>
   </div>
   <div class="row user-projects">
     <div class="six columns images">
-      <img alt="mountains" src="{{ "/assets/img/mountains.jpg" | prepend: site.baseurl }}" />
+      <img alt="CNU Mobile Navigator" src="{{ "/assets/img/navigator.png" | prepend: site.baseurl }}" />
     </div>
     <div class="six columns contents">
-      <h5> Project Title </h5>
+      <h5>CNU Navigator</h5>
       <ul>
-        <li> Featured Skills</li>
+        <li>Jira / Stash / Bamboo</li>
+        <li>.NET Framework</li>
+        <li>OracleDB</li>
+        <li>Cordova</li>
+        <li>JavaScript</li>
       </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="project-link" href="#">Check it out</a>
+      <p>
+        I designed, built, and launched the official Christopher Newport University for iOS and Android.
+        The frontend is built using web technologies served using Cordova, and the backend is written as a .NET Entity Framework 6 application using Oracle Database.
+        A RESTful JSON API was created to serve data such as dining hall menus, sports scores, workout class schedules, newspaper articles, recycling locations, campus alerts, and more.
+        An adminsitrative interface was built to allow self-service data updating to various departments.
+        The project was planned, tracked, and built using the Atlassian suite.
+      </p>
+      <a class="project-link" href="https://navigator.cnu.edu/MobileNavigator/">Check it out</a>
     </div>
   </div>
   <div class="row user-projects">
-    <div class="six columns">
-      <img alt="mountains" src="{{ "/assets/img/skate.jpg" | prepend: site.baseurl }}" />
+      <div class="six columns images">
+        <img alt="Open Course Project Logo" src="{{ "/assets/img/opencourse.png" | prepend: site.baseurl }}" />
+      </div>
+      <div class="six columns contents">
+        <h5>Open Course Project</h5>
+        <ul>
+          <li>Amazon Web Services</li>
+          <li>Django / Python</li>
+          <li>MySQL</li>
+          <li>Selenium</li>
+          <li>Apache</li>
+        </ul>
+        <p>
+          I built a website using the Django framework that is used by over 1,000 students to plan their semester schedules.
+          I designed Open Course to merge many of the disjointed aspects of scheduling including course search, pre-requisite / requirement verification, professor ratings, textbook purchasing, and more.
+          Students can search for and mark the courses they're interested in taking, and will recieve updates about the course, its status, and the number of seats left as registration nears.
+          During the semester, students can print copies of their schedule, find textbooks at the lowest price, and see when their final exam is scheduled.
+          The site utilizes MySQL databases, Ubuntu AWS EC2 servers, and OAuth login using your official school account.
+        </p>
+        <a class="project-link" href="https://opencourseproject.com">Check it out</a>
+      </div>
     </div>
-    <div class="six columns">
-      <h5> Project Title </h5>
-      <ul>
-        <li> Featured Skills</li>
-      </ul>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <a class="project-link" href="#">Check it out</a>
-    </div>
-  </div>
+    <div class="row user-projects">
+        <div class="six columns images">
+          <img alt="DiningBuddy Logo" src="{{ "/assets/img/diningbuddy.png" | prepend: site.baseurl }}" />
+        </div>
+        <div class="six columns contents">
+          <h5>DiningBuddy</h5>
+          <ul>
+            <li>Objective-C / iOS API</li>
+            <li>Java / Android API</li>
+            <li>Flask / Python</li>
+            <li>GeoJSON</li>
+            <li>MongoDB</li>
+            <li>Pygal</li>
+          </ul>
+          <p>
+            My freshman year of college I built a native iOS and Android app that uses location services to show students how crowded the on-campus dining halls are.
+            The app can display daily menus, hours of operation, and can share information on the app about the dining hall.
+            The backend is built in Flask and served from MongoDB via a JSON API.
+            DiningBuddy was featured in the school's <a href="http://www.thecaptainslog.org/2015/news/diningbuddy-attempts-to-take-the-guesswork-out-of-the-age-old-question-commons-or-regattas/">newspaper</a> and on <a href="https://www.youtube.com/watch?time_continue=454&v=4XYmmR76Pfw">TV</a>, and has over 5,000 downloads across both platforms.
+          </p>
+          <a class="project-link" href="http://diningbuddy.gravitydevelopment.net">Check it out</a>
+        </div>
+      </div>
+      <div class="row user-projects">
+          <div class="six columns images">
+            <img alt="AntiCheat Logo" src="{{ "/assets/img/anticheat.png" | prepend: site.baseurl }}" />
+          </div>
+          <div class="six columns contents">
+            <h5>AntiCheat</h5>
+            <ul>
+              <li>Java</li>
+              <li>Maven</li>
+              <li>jUnit</li>
+              <li>Sonar</li>
+              <li>Jenkins</li>
+            </ul>
+            <p>
+              AntiCheat is a program I created for Minecraft servers that detects and prevents client-side cheating.
+              The program uses a series of mathematical checks to identify and block abnormal client behavior, and classifies users so that server administrators can easily deal with malicious players.
+              AntiCheat was written in Java using the Bukkit server API and has an enterprise web-panel component that allows large-scale server admins to quickly check for and resolve any issues, even when not in the game.
+              By the time the project was discontinued in 2014, it had been downloaded over 2 million times.
+            </p>
+            <a class="project-link" href="https://dev.bukkit.org/projects/anticheat/pages/archive-main-2-0">Check it out</a>
+          </div>
+        </div>   
+        <div class="row user-projects">
+            <div class="six columns images">
+              <img alt="Aviation Academy Logo" src="{{ "/assets/img/aviation.png" | prepend: site.baseurl }}" />
+            </div>
+            <div class="six columns contents">
+              <h5>DigitalCheckout</h5>
+              <ul>
+                <li>Amazon Web Services</li>
+                <li>Django / Python</li>
+                <li>iOS / Objective-C</li>
+                <li>MySQL</li>
+              </ul>
+              <p>
+                I created a mobile app and website for Newport News Public Schools' Aviation Academy to digitize their system of checking in and out tools to their toolroom.
+                The Aviation Academy is a STEM Magnet Program that teaches students to build, fix, and fly planes, and as such they have an active workshop with many tools that are often misplaced or lost.
+                In my volunteer work with the school I created a system of printable QR codes that can be scanned at an iPad to check in and out a tool.
+                The status of the tools and logs of who has checked them out is then viewable on the Django web interface, where administrators can also add and remove tools and print new QR codes for them.
+              </p>
+            </div>
+          </div>         
 </div>
