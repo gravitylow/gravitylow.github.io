@@ -15,6 +15,6 @@ linkedin_username:  adam-fendley
 
 # Google-analytics
 google-analytics:
-  id: ""
+  id: "UA-110594190-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
