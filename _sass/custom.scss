@@ -1,0 +1,64 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.gallery-item {
+  margin: 5px;
+  border: 1px solid #ccc;
+}
+
+.gallery-item:hover {
+  border: 1px solid #777;
+}
+
+.gallery-item img {
+  width: 100%;
+  object-fit: cover;
+  
+  /* fade bottom */
+  -webkit-mask-image: linear-gradient(to bottom, black 75%, transparent);
+  mask-image: linear-gradient(to bottom, black 75%, transparent);
+}
+
+.gallery-item div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.float-left {
+  float: left;
+  margin: 0 15px 10px 0;
+  width: 50%;
+}
+
+.float-right {
+  float: right;
+  margin: 0 15px 10px 0;
+  width: 50%;
+}
+
+.clear {
+    padding-top: 10px;
+    clear: both;
+}
+
+.tall-image {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+.center {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nyc-pic {
+  float: left;
+  margin: 0 15px 10px 0;
+//   width: 35%;
+  max-height: 500px;
+}
