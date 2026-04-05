@@ -238,13 +238,13 @@ Our wedding registry was the other big task to implement from scratch, because w
 
 Our vision for the registry was therefore to have a set list of specific additions we could allow guests to contribute towards on our honeymoon.
 
-<a href="/assets/img/wedding/registry.png" data-lightbox="registry">
-    <img src="/assets/img/wedding/registry.png" alt="Screenshot of the wedding website's registry page, showing multiple purchasable items such as checked bags, taxi fares, dinner for two, and a night at a hotel." />
+<a href="/assets/img/wedding/registry-item.png" data-lightbox="registry-item">
+    <img src="/assets/img/wedding/registry-item.png" alt="Screenshot of the wedding website's registry item page, showing the taxi fare option for $35 each, with 5 of these options available. On the bottom there is a quantity selector and an 'Add To Cart' button" />
 </a>
 
 I had never integrated with any payment processor before, so I had a lot to research and learn here. I was aware that Stripe was by far the most popular payment processing API, but at the time I started on this project, Stripe's CEO had just posted a [tweet](https://x.com/patrickc/status/1861749249043796000) that was at best tone-deaf and at worst in tacit support of Israel’s ongoing genocide in Palestine. I strongly believe that software engineers have a responsibility to build ethically, so given that I wasn’t already locked in to anything, I decided it would be worth some additional time to find a platform that I felt comfortable using. I landed on Square, which has great [product and inventory-management functionality](https://squareup.com/help/us/en/article/7982-manage-square-online-item-settings-from-your-item-library) which I was excited about integrating with in order to allow my then-fiancée to easily help populate the list of honeymoon items without dealing with the code.
 
-After getting all the code written for listing and displaying the inventory along with photos and descriptions, everything was working. The only thing I had to deal with myself was sending payment receipts, since I couldn’t find a way for Square to send them to the user themselves.
+After getting all the code written for listing and displaying the inventory along with photos and descriptions, everything was working. The only thing I had to deal with myself was sending payment receipts using SES, since I couldn’t find a way for Square to send them to the user themselves.
 
 ## Rehearsal
 
