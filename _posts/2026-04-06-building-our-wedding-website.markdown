@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Building Our Custom Wedding Website"
+description: "This post is about something that's usually a minor detail in most people’s wedding planning, but became a bit more of an adventure in ours -- the wedding website."
 image: /assets/img/wedding/home.png
 ---
 
