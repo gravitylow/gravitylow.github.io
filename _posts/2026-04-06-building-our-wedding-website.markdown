@@ -250,7 +250,7 @@ After getting all the code written for listing and displaying the inventory alon
 
 ## Rehearsal
 
-With all this done, and a bunch of tweaking and bugfixing, all of the core functionality of the website was done! I throw my laptop in my backpack and hopped on the train up to New York City to see my younger brother, who also happens to be both my most trusted software engineering counterpart and Best Man in our wedding, to put it to the real test.
+With all this done, and a bunch of tweaking and bugfixing, all of the core functionality of the website was done! I threw my laptop in my backpack and hopped on the train up to New York City to see my younger brother, who also happens to be both my most trusted software engineering counterpart and Best Man in our wedding, to put it to the real test.
 
 <div class="center">
     <img class="nyc-pic" src="/assets/img/wedding/nyc-bugbash.jpg" alt="A photo of two beers on a desk with a code editor and chrome open in the background, with text that says 'It's bugbash time!'" />
@@ -268,7 +268,7 @@ Sometime around 1:30am after hours of bashing website bugs, we ran into a proble
 
 I feel like I *do* actually understand this response, to an extent -- I wasn’t operating a business, and this use case surely didn’t fall into any normal pattern Square would care to prioritize. I was still pretty disappointed by this turn, especially considering the swiftness of the action and the amount of work I had put in to integrate with Square over another platform. Most of all, I was **incredibly** thankful for all the time we spent testing this integration to trigger this issue before the website went live. I had done *extensive* testing myself prior to our bug-bashing weekend and was pretty sure we were good to go. I can’t imagine how much worse this would have been if guests had started to use Square to actually buy wedding gifts before they decided on an inquisition and account closure.
 
-So, I went back to Google to find another payment processor, this time making sure that they would support my weird use case.   Despite how great it was to have the full Square interface for managing inventory without changing the code, I was pretty burnt out and unwilling to rewrite all 600+ lines of code I wrote to integrate completely with the Square platform and dynamically retrieve the items and inventory from their system (I also had a policy against using AI to write any for this project -- authenticity!). So, I opted for a much simpler approach where the inventory was hardcoded in the website client-side, and PayPal was used to process payments for the selected items.
+So, I went back to Google to find another payment processor, this time making sure that they would support my weird use case.   Despite how great it was to have the full Square interface for managing inventory without changing the code, I was pretty burnt out and unwilling to rewrite all 600+ lines of code I wrote to integrate completely with the Square platform and dynamically retrieve the items and inventory from their system (I also had a policy against using AI to write any code for this project -- authenticity!). So, I opted for a much simpler approach where the inventory was hardcoded in the website client-side, and PayPal was used to process payments for the selected items.
 
 ```tsx
 export const REGISTRY_ITEMS: RegistryItem[] = [
@@ -468,7 +468,7 @@ In addition to the metrics, I wanted a way to easily see what was happening acro
 }
 ```
 
-This would help me quickly notice any common issues that my guests were encountering and fix them proactively. As one example of where this came in useful, I noticed that there were a number of errors guests were encountering when manually logging in, and from the logs it was clear the reason why was that they were using their full house address instead of just the number (for example entering `123 Main St.` instead of just `123`), which would cause the guest lookup to fail. I was able to fix this common issue by just adding a fallback to check the first "word" in an input containing strings against the house number I had in my database:
+This would help me quickly notice any common issues that my guests were encountering and fix them proactively. As one example of where this came in useful, I noticed that there were a number of errors guests were encountering when manually logging in, and from the logs it was clear the reason was that they were using their full house address instead of just the number (for example entering `123 Main St.` instead of just `123`), which would cause the guest lookup to fail. I was able to fix this common issue by just adding a fallback to check the first "word" in an input containing spaces against the house number I had in my database:
 
 ```diff
  for (const invitation of invitationsMatchingLastName) {
