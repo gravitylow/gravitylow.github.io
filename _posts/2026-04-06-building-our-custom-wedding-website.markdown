@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Building Our Custom Wedding Website"
+image: /assets/img/wedding/home.png
 ---
 
 My partner and I recently got married! We feel incredibly grateful that everything went nearly perfectly, and we are really enjoying this new chapter in our lives together.
@@ -37,7 +38,7 @@ By contrast, we wanted our wedding details to be very secure and only accessible
 
 I wanted to achieve a simple but secure mechanism for accessing the website, that didn’t feel like a burden or afterthought to guests.
 
-### Customized Invitations and Ease
+### Customized Invitations and Ease of Use
 
 <a class="float-left" href="/assets/img/wedding/rsvp-qr.png" data-lightbox="rsvp-qr">
     <img src="/assets/img/wedding/rsvp-qr.png" alt="Photo of an insert into the wedding invitation that says 'RSVP by August 15th' and contains a QR code to scan to access the wedding website." />
